@@ -283,15 +283,8 @@ export default function HomePage() {
               </div> */}
 
               <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-[#111] leading-tight pixelbold">
-                Satu Foto Profil. <br />
-                <span className="text-[#c0392b] drop-shadow-sm">
-                  Seribu Suara untuk Langit Kita.
-                </span>
-              </h1>
-
-              <p className="text-sm md:text-base text-gray-700 leading-relaxed max-w-2xl">
                 Langit merah jingga bukan filter instagram yang estetik. Itu tanda bahaya kebakaran hutan dan kabut asap pekat.
-              </p>
+              </h1>
 
               <div className="win-inset-gray p-3 flex items-center justify-between flex-wrap gap-3">
                 <div className="text-xs font-bold text-[#000080]">
