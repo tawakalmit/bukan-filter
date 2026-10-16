@@ -477,9 +477,9 @@ export default function HomePage() {
                               <span className="text-[#000080] text-xs font-bold">✓</span>
                             )}
                           </div>
-                          <span className="text-[10px] text-gray-600 block truncate leading-tight mt-0.5">
+                          {/* <span className="text-[10px] text-gray-600 block truncate leading-tight mt-0.5">
                             {preset.subtitle}
-                          </span>
+                          </span> */}
                         </div>
                       </button>
                     );
