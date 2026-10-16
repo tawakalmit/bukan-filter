@@ -282,13 +282,13 @@ export default function HomePage() {
                 <span>1 FOTO PROFIL · 1 SERUAN KEBERSAMAAN</span>
               </div> */}
 
-              <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-[#111] leading-tight pixelbold">
+              {/* <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-[#111] leading-tight pixelbold">
                 Langit merah jingga bukan filter instagram yang estetik. Itu tanda bahaya kebakaran hutan dan kabut asap pekat.
-              </h1>
+              </h1> */}
 
               <div className="win-inset-gray p-3 flex items-center justify-between flex-wrap gap-3">
                 <div className="text-xs font-bold text-[#000080]">
-                  KABUT BUKAN ESTETIKA · HAK UDARA BERSIH MILIK SEMUA
+                  HAK UDARA BERSIH MILIK SEMUA
                 </div>
                 <PixelButton
                   title="Mulai Edit Foto ↓"
