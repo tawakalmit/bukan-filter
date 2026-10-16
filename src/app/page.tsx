@@ -668,62 +668,6 @@ export default function HomePage() {
         </section>
 
 
-
-        {/* EDUCATIONAL & CONTEXT SECTION */}
-        <section id="info" className="win-window p-4 md:p-6 shadow-xl">
-          {/* <div className="win-window-titlebar !py-1 text-xs mb-4">
-            <div className="flex items-center gap-1.5 font-bold">
-              <FaInfoCircle size={12} />
-              <span>DI_BALIK_LENSA: MENGAPA_ISU_INI_PENTING.TXT</span>
-            </div>
-          </div> */}
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs text-gray-800 leading-relaxed">
-            <div className="win-inset bg-white p-4 space-y-3">
-              <h3 className="font-bold text-sm text-[#000080] pixelbold">
-                Kebakaran Hutan Bukan Musibah Biasa
-              </h3>
-              <p>
-                Karhutla (Kebakaran Hutan dan Lahan) adalah krisis ekologis yang berulang. Pembakaran lahan gambut melepaskan jutaan ton karbon ke atmosfer dan memicu kabut asap tebal beracun yang berlangsung berminggu-minggu.
-              </p>
-              <p>
-                Ratusan ribu warga—termasuk anak-anak, lansia, dan kelompok rentan—terpapar Infeksi Saluran Pernapasan Akut (ISPA). Sekolah diliburkan, aktivitas lumpuh, dan flora-fauna endemik kehilangan rumahnya.
-              </p>
-            </div>
-
-            <div className="win-inset bg-white p-4 space-y-3 flex flex-col justify-between">
-              <div className="space-y-3">
-                <h3 className="font-bold text-sm text-[#000080] pixelbold">
-                  Pantau Titik Panas & Kualitas Udara Nyata
-                </h3>
-                <p>
-                  Warna filter pada studio ini dirancang sebagai simbol solidaritas digital. Untuk melihat titik panas (hotspot) dan sebaran asap terkini secara faktual, kamu dapat memantau portal data resmi:
-                </p>
-              </div>
-
-              <div className="pt-2 border-t border-gray-200 flex flex-col gap-2">
-                <a
-                  href="https://sipongi.menlhk.go.id/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="win-button !py-2 !text-xs text-[#000080] font-bold flex items-center justify-between"
-                >
-                  <span>Dashboard SiPongi KLHK (Titik Panas Karhutla)</span>
-                  <FaExternalLinkAlt size={11} />
-                </a>
-                <a
-                  href="https://gis.bnpb.go.id/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="win-button !py-2 !text-xs text-[#000080] font-bold flex items-center justify-between"
-                >
-                  <span>Portal GIS Bencana BNPB RI</span>
-                  <FaExternalLinkAlt size={11} />
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       {/* RETRO FOOTER */}
