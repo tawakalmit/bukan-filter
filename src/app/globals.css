@@ -1,0 +1,292 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'PixeloidSans';
+  src: url('/fonts/PixeloidSans.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixeloidSans-Bold';
+  src: url('/fonts/PixeloidSans-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+:root {
+  --bg-retro: #4e555e;
+  --win-gray: #c0c0c0;
+  --win-gray-dark: #808080;
+  --win-gray-light: #dfdfdf;
+  --win-blue: #000080;
+  --win-blue-light: #1084d0;
+}
+
+body {
+  background-image: url('/assets/background.png');
+  background-color: #4a525d;
+  font-family: 'PixeloidSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #1a1a1a;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+.pixelbold {
+  font-family: 'PixeloidSans-Bold', sans-serif;
+}
+
+/* Retro Windows 95 & Tawakalmit Navigation */
+#navigation-menu {
+  width: 100%;
+  border: none !important;
+  background: #d4d0c8 !important;
+  box-shadow: inset -1px -1px 0px 0px #404040, inset 1px 1px 0px 0px #eceae7, inset -2px -2px 0px 0px #808080, inset 2px 2px 0px 0px #ffffff !important;
+  padding: 8px 12px !important;
+  z-index: 100;
+}
+
+/* Retro Tawakalmit 9-Slice Buttons */
+.retro-btn, #runButton {
+  color: #000000 !important;
+  min-width: 120px;
+  padding: 6px 16px;
+  border-style: solid !important;
+  border-width: 3px 3px 5px 5px !important;
+  image-rendering: pixelated;
+  border-image: url(/pixel-assets/Button_Grey_Slice.png) 3 3 5 5 fill stretch !important;
+  transition: all 0.15s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'PixeloidSans', sans-serif;
+}
+
+.retro-btn:hover, #runButton:hover, .retro-btn.active, #runButton.active {
+  color: #ffffff !important;
+  border-image: url(/pixel-assets/Run_Button_Up_Slice.png) 3 3 5 5 fill stretch !important;
+}
+
+.retro-btn:active, #runButton:active {
+  transform: translateY(2px);
+  filter: brightness(0.9);
+}
+
+.retro-btn:disabled, #runButton:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
+  filter: grayscale(1);
+}
+
+/* Secondary Win95 Button */
+.win-button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  color: #000000;
+  padding: 4px 12px;
+  font-family: 'PixeloidSans', sans-serif;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px #808080;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.win-button:hover {
+  background: #d4d0c8;
+}
+
+.win-button:active {
+  border-color: #404040 #ffffff #ffffff #404040;
+  box-shadow: inset 1px 1px #808080;
+  transform: translate(1px, 1px);
+}
+
+/* Retro Pop-Up Speech Bubble from Tawakalmit */
+.qtip-default {
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 0;
+  color: white;
+  border-color: transparent;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 18px 21px 22px 19px;
+  box-shadow: none;
+  image-rendering: pixelated;
+  border-image: url(/pixel-assets/Pop_Up_Slice.png) 18 21 22 19 fill stretch;
+}
+
+.qtip-content {
+  color: white;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  text-align: left;
+  overflow-wrap: break-word;
+}
+
+/* Win95 Window Container */
+.win-window {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px #808080, 4px 4px 16px rgba(0, 0, 0, 0.45);
+}
+
+.win-window-titlebar {
+  background: linear-gradient(90deg, #000080 0%, #1084d0 100%);
+  color: #ffffff;
+  font-family: 'PixeloidSans-Bold', sans-serif;
+  padding: 5px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.win-window-titlebar.inactive {
+  background: linear-gradient(90deg, #7b828a 0%, #a4abb5 100%);
+}
+
+.win-btn-control {
+  width: 18px;
+  height: 16px;
+  background: #c0c0c0;
+  border: 1px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  font-size: 10px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #000;
+  box-shadow: inset 1px 1px #dfdfdf;
+  cursor: pointer;
+}
+
+.win-btn-control:hover {
+  background: #d4d0c8;
+}
+
+.win-btn-control:active {
+  border-color: #404040 #ffffff #ffffff #404040;
+  transform: translate(1px, 1px);
+}
+
+/* Win95 Inset Sunken Box */
+.win-inset {
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  background: #ffffff;
+  box-shadow: inset 1px 1px #404040;
+}
+
+.win-inset-gray {
+  border: 2px solid;
+  border-color: #808080 #ffffff #ffffff #808080;
+  background: #d4d0c8;
+  box-shadow: inset 1px 1px #404040;
+}
+
+/* Win95 Raised Box */
+.win-raised {
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+  background: #c0c0c0;
+}
+
+/* Retro Sliders */
+input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #808080;
+  border: 1px solid #404040;
+  box-shadow: inset 1px 1px #000, 0 1px 0 #fff;
+  outline: none;
+  border-radius: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 24px;
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px #808080;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb:active {
+  background: #a0a0a0;
+}
+
+/* Retro Checkbox */
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border: 2px solid;
+  border-color: #404040 #ffffff #ffffff #404040;
+  box-shadow: inset 1px 1px #000000;
+  cursor: pointer;
+  display: inline-grid;
+  place-content: center;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: #000080;
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  top: -1px;
+  left: 2px;
+}
+
+/* Pixel animations */
+@keyframes pixel-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+.pixel-blinker {
+  animation: pixel-blink 0.9s infinite;
+}
+
+/* Custom Scrollbar for Retro Windows */
+::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+  background: #d4d0c8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px #808080;
+}
+
+::-webkit-scrollbar-button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: #ffffff #404040 #404040 #ffffff;
+  width: 16px;
+  height: 16px;
+}
