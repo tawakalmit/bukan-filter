@@ -651,7 +651,7 @@ export default function HomePage() {
                 {/* EXPORT ACTION BUTTON */}
                 <div className="pt-2 flex flex-col gap-2">
                   <PixelButton
-                    title="SIMPAN FOTO PROFIL (1080×1080 PNG) ↓"
+                    title="SIMPAN FOTO"
                     onClick={handleExportProfile}
                     className="!w-full !py-3.5 !text-sm !bg-[#c0392b] !text-white font-extrabold shadow-lg"
                   />
